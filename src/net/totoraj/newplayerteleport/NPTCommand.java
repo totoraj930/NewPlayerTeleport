@@ -20,7 +20,7 @@ public class NPTCommand implements TabExecutor {
 	public boolean onCommand(CommandSender sender, Command command, String label,
 			String[] args) {
 		if (args.length == 0) {
-			sender.sendMessage("/npt [reload | set | tp <Player>]");
+			sender.sendMessage("/npt <reload|set|tp [Player]>");
 			return true;
 		}
 
@@ -83,7 +83,7 @@ public class NPTCommand implements TabExecutor {
 			return true;
 		}
 
-		sender.sendMessage("/npt [reload | set | tp <Player>]");
+		sender.sendMessage("/npt <reload|set|tp [Player]>");
 		return true;
 	}
 
