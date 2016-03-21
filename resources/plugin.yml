@@ -1,0 +1,21 @@
+name: NewPlayerTeleport
+main: net.totoraj.newplayerteleport.NewPlayerTeleport
+version: 0.0.1
+authors: [totoraj]
+website: "http://totoraj.net"
+depend: []
+commands:
+  newplayerteleport:
+    description: プラグイン管理コマンド
+    aliases: npt
+    usage: /npt [reload | set | tp <Player>]
+    permission: newplayerteleport.command.npt
+    permission-message: パーミッション "<permission>" がないため、実行できません。
+permissions:
+  newplayerteleport.*:
+    description: NewPlayerTeleportのすべての権限
+    children:
+      newplayerteleport.command.npt: true
+  newplayerteleport.command.npt:
+    description: nptコマンドの権限
+    default: op
